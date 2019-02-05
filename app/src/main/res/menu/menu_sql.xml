@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sql_add_element"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/sql_table"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sql_change_table"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/sql_change_table"
+        app:showAsAction="ifRoom"/>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sql_all"
+            android:title="@string/sql_all"/>
+        <item
+            android:id="@+id/sql_monday"
+            android:title="@string/sql_monday"/>
+        <item
+            android:id="@+id/sql_tuesday"
+            android:title="@string/sql_tuesday"/>
+        <item
+            android:id="@+id/sql_wednesday"
+            android:title="@string/sql_wednesday"/>
+        <item
+            android:id="@+id/sql_thursday"
+            android:title="@string/sql_thursday"/>
+        <item
+            android:id="@+id/sql_friday"
+            android:title="@string/sql_friday"/>
+        <item
+            android:id="@+id/sql_saturday"
+            android:title="@string/sql_saturday"/>
+        <item
+            android:id="@+id/sql_sunday"
+            android:title="@string/sql_sunday"/>
+    </group>
+</menu>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.umik.gnomex909.aurra.MainActivity">
+    <item
+        android:id="@+id/action_sql_user"
+        android:orderInCategory="101"
+        android:title="@string/sql_user"/>
+</menu>

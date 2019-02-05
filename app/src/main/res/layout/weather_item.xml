@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/weather_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_date_text"
+        tools:text="03.12.2017"/>
+
+    <TextView
+        android:id="@+id/weather_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/weather_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/weather_item_time"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_date"
+        tools:text="Od 9:24 do 16:27"/>
+
+    <TextView
+        android:id="@+id/weather_temp_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_time"
+        tools:text="-17,6"/>
+
+    <TextView
+        android:id="@+id/weather_temp_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/weather_temp_min"
+        tools:text="-12,3"/>
+
+    <TextView
+        android:id="@+id/weather_max_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/weather_item_min"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/weather_temp_min"
+        app:layout_constraintStart_toStartOf="@+id/weather_temp_min"
+        app:layout_constraintTop_toBottomOf="@+id/weather_temp_min"/>
+
+    <TextView
+        android:id="@+id/weather_min_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weateher_item_max"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/weather_temp_max"
+        app:layout_constraintStart_toStartOf="@+id/weather_temp_max"
+        app:layout_constraintTop_toTopOf="@+id/weather_max_text"/>
+
+    <TextView
+        android:id="@+id/weather_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/weather_temp_min"
+        app:layout_constraintStart_toStartOf="@+id/weather_temp_min"
+        app:layout_constraintTop_toBottomOf="@+id/weather_max_text"
+        tools:text="13,8"/>
+
+    <TextView
+        android:id="@+id/weather_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/weather_temp_max"
+        app:layout_constraintStart_toStartOf="@+id/weather_temp_max"
+        app:layout_constraintTop_toTopOf="@+id/weather_wind"
+        tools:text="Deszcz"/>
+
+    <TextView
+        android:id="@+id/weather_wind_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/weather_wind"
+        app:layout_constraintEnd_toEndOf="@+id/weather_wind"
+        app:layout_constraintStart_toStartOf="@+id/weather_wind"
+        app:layout_constraintTop_toBottomOf="@+id/weather_wind"/>
+
+    <TextView
+        android:id="@+id/weather_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_type_text"
+        app:layout_constraintEnd_toEndOf="@+id/weather_type"
+        app:layout_constraintStart_toStartOf="@+id/weather_type"
+        app:layout_constraintTop_toTopOf="@+id/weather_wind_text"/>
+
+    <TextView
+        android:id="@+id/weather_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/weather_pressure"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_wind_text"
+        tools:text="Ciśnienie w tym czasie jest korzystne"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="192dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/weather_localisation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/weather_localisation"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_pressure"/>
+
+    <TextView
+        android:id="@+id/weather_localisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_localisation_text"
+        tools:text="Warszawa"/>
+
+</android.support.constraint.ConstraintLayout>

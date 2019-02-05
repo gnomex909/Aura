@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.umik.gnomex909.aurra.AddForecast">
+
+    <EditText
+        android:id="@+id/input_start_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Godzina wyjścia"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_end_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Godzina powrotu"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_start_hour"/>
+
+    <EditText
+        android:id="@+id/input_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Data prognozy"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_end_hour"/>
+
+    <Button
+        android:id="@+id/btn_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_start_hour"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Wybierz godzine"/>
+
+    <Button
+        android:id="@+id/btn_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_end"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start_time"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_time"
+        tools:text="Wybierz godzine"/>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_date"
+        app:layout_constraintEnd_toEndOf="@+id/btn_end_time"
+        app:layout_constraintStart_toStartOf="@+id/btn_end_time"
+        app:layout_constraintTop_toBottomOf="@+id/btn_end_time"
+        tools:text="Wybierz date"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_date"
+        tools:text="Dodaj nową prognozę"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wróć bez zapisywania"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save"/>
+</android.support.constraint.ConstraintLayout>
